@@ -1,7 +1,6 @@
 <template>
-  <button class="btn btn-primary">
-    <i @click="cg" :class="`fa fa-2x ${icon}`"></i>
-    <!-- <i class="fa fa-bookmark" aria-hidden="true"></i> -->
+  <button @click="$emit('on:click')" class="btn btn-primary">
+    <i :class="`fa fa-2x ${icon}`"></i>
   </button>
 </template>
 

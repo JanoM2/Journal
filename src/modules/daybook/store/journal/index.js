@@ -11,6 +11,15 @@ const jounarlModule = {
   state,
 };
 
+const authModule = {
+  namespaced: true,
+  actions,
+  mutations,
+  getters,
+  state,
+};
+
 export default jounarlModule;
+export { authModule };
 
 // este index es lo que se termina importando en el store
