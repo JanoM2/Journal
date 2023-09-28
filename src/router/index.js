@@ -1,7 +1,7 @@
-import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import daybookRouter from "../modules/daybook/router/index.js";
 import authRouter from "../modules/auth/router";
+import daybookRouter from "../modules/daybook/router/index.js";
+import { createRouter, createWebHashHistory } from "vue-router";
 import isAuthenticatedGuard from "@/modules/auth/router/auth-guard";
 
 const routes = [

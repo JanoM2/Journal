@@ -14,6 +14,8 @@ const useAuth = () => {
   };
 
   const checkAuthStatus = async () => {
+    console.log(store);
+
     const res = await store.dispatch("auth/checkAuthentication");
     return res;
   };

@@ -8,4 +8,3 @@ export const userName = (state) => {
 };
 
 // para traer informacion del state y puede procesarse
-//
