@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # journal
 
 ## Project setup
@@ -24,5 +24,4 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 =======
-# Journal
->>>>>>> c7a0699db9febbb89c7d48df59a8930cfdfc7f1f
+
