@@ -3,23 +3,14 @@
     <div class="entry-title d-flex justify-content-between p-2">
       <div>
         <span class="text-success fs-3 fw-bold">{{ day }}</span>
-        <span class="m-1 fs-3">{{ month }}</span>
-        <span class="mx-2 fs-4 fw-lign">{{ yearDay }}</span>
+        <span class="m-1 fs-3">Mayo</span>
+        <span span class="mx-2 fs-4 fw-lign"> {{ yearDay }}</span>
       </div>
 
       <div>
-        <input
-          v-show="false"
-          type="file"
-          @change="onSelectedImage"
-          ref="imageSelector"
-        />
+        <input v-show="false" type="file" @change="onSelectedImage" ref="imageSelector" />
 
-        <button
-          v-if="entry.id"
-          @click="removeEntry()"
-          class="btn btn-danger mx-2"
-        >
+        <button v-if="entry.id" @click="removeEntry()" class="btn btn-danger mx-2">
           Borrar
           <i class="fa fa-trash-alt"></i>
         </button>
@@ -36,19 +27,9 @@
       <textarea v-model="entry.text" placeholder="¿Qué sucedió hoy?"></textarea>
     </div>
 
-    <img
-      v-if="entry.picture && !localImage"
-      :src="entry.picture"
-      alt="entry-picture"
-      class="img-thumbnail"
-    />
+    <img v-if="entry.picture && !localImage" :src="entry.picture" alt="entry-picture" class="img-thumbnail" />
 
-    <img
-      v-if="localImage"
-      :src="localImage"
-      alt="entry-picture"
-      class="img-thumbnail"
-    />
+    <img v-if="localImage" :src="localImage" alt="entry-picture" class="img-thumbnail" />
   </template>
 
   <Fab icon="fa-save" @on:click="saveEntry()" />
