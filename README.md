@@ -1,4 +1,3 @@
-
 # journal
 📍 Journal/Notepad with User Profile 💻
 
